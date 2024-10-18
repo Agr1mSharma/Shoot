@@ -1,24 +1,15 @@
 {
-        "name": "brainrot",
-        "description": "get brainrot to help you lock in",
-        "version": "1.0",
-        "manifest_version": 3,
-        "permissions": [
-            "activeTab"
-        ],
-        "background": {
-            "service_worker": "popup.js"
-        },
-        "action": {
-            "default_popup": "popup.html",
-            "default_icon": {
-            "16": "icon16.png",
-            "48": "icon48.png",
-            "128": "icon128.png"
-        },
-        "web_accessible_resources": [{
-            "resources": ["mymovie2.mp4"],
-            "matches": ["<all_urls>"]
-        }]
+    "manifest_version": 3,
+    "name": "Subway Surfer Extension",
+    "version": "1.0",
+    "description": "Play local video in a resizable popup window",
+    "permissions": [
+      "windows"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
     }
-}
+  }

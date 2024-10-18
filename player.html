@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Player</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    #videoPlayer {
+      width: 100%;    /* Take full width of the smaller window */
+      height: 100vh;  /* Take full height of the smaller window */
+      object-fit: contain;
+      background: #000;
+    }
+
+    #videoPlayer::-webkit-media-controls {
+      opacity: 1 !important;
+      display: flex !important;
+    }
+  </style>
+</head>
+<body>
+  <video id="videoPlayer" controls autoplay>
+    <source src="mymovie2.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
