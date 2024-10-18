@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 1; /* Takes up the remaining space */
+    margin-right: 20px;
+}
+
+#myVideo {
+    width: 300px;
+    height: 2000px;
+}
